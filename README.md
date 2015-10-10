@@ -18,4 +18,6 @@ This is a tool for managing sharing tools between friends. You could say that it
   * be able to filter the list through search
   * when checking out a tool, the tool owner gets notified. How the tool is transferred is up to the borrower and the lender.
 * be able to post tools a user wants to lend out.
-* 
+* A library wish list
+  * any user will be able to add an item to the wish list and some other info about it.
+  * other users will be able to upvote wishlist items
