@@ -4,10 +4,29 @@
 
 <body>
   <h1>Tool Lending Library</h1>
-  {{> atForm}}
   {{> comingSoon}}
+  {{> wishList}}
 </body>
 
 <template name="comingSoon">
     <img src="/img/construction.gif" />
+</template>
+
+<template name="wishList">
+    <h1>Wish List</h1>
+    <ul>
+        {{#each tools}}
+        	<li style='border-bottom: 1px solid black; width: 50%'>
+        	    <div style='display: inline-block; width: 15%; font-size: 30px'>
+        	        ⇧ 
+        	        {{upvotes}}
+        	    </div>
+        	    <div style='display: inline-block; width: 20%'>
+        	         <img style='height: 30px' src='{{imageUrl}}'/>
+        	    </div>
+        	    <div style='display: inline-block; width: 50%'>{{name}}</div>        	    
+        	    <div style='display: inline-block; width: 10%'>${{price}}</div>
+        	</li>
+        {{/each}}
+    </ul>
 </template>
